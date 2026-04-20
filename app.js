@@ -254,7 +254,7 @@ function buildHome() {
       </div>
 
       <div class="section-header" style="margin-top: 4rem; text-align: center; background: rgba(0, 212, 255, 0.05); padding: 3rem; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.1);">
-        <h2 style="font-size: 2rem;">Professional <span class="brand-accent">Resume</span></h2>
+        <h2 style="font-size: 2rem;"><span class="brand-accent">Resume</span></h2>
         <p style="color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 2rem;">Download my full resume for a detailed overview of my experience, certifications, and technical expertise.</p>
         <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
           <a href="resume.pdf" target="_blank" class="filter-btn active" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem;">
