@@ -314,14 +314,15 @@ async function fetchTopProjects() {
   try {
     const res = await fetch('https://api.github.com/users/VrajLalwala22/repos?sort=updated&per_page=20');
     if (!res.ok) return;
+    const featuredRepos = ['Speed-rental', 'CloudTier-Terraform', 'terraform-multi-tier-deployment'];
     const repos = await res.json();
-    const topRepos = repos.filter(r => !r.fork).sort((a,b) => b.stargazers_count - a.stargazers_count).slice(0, 3);
+    const topRepos = repos.filter(r => featuredRepos.includes(r.name));
     
     const grid = document.getElementById('github-projects-grid');
     if (!grid) return;
     
     const customDescriptions = {
-      'Real-Time-tasks': 'A repository containing various hands-on DevOps implementations, including CI/CD pipelines, cloud orchestration, and containerization tasks.',
+      'Speed-rental': 'A full-stack, scalable car rental application with seamless booking, inventory management, and user authentication features.',
       'CloudTier-Terraform': 'A scalable and highly available multi-tier cloud infrastructure architecture provisioned entirely using Terraform.',
       'terraform-multi-tier-deployment': 'An automated, production-ready three-tier architecture deployment on AWS (ALB, ASG, RDS) built with Terraform.'
     };
