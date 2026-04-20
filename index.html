@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vraj Lalwala – DevOps Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+  
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <span class="brand-text">DevOps<span class="brand-accent">Portfolio</span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#" onclick="showPage('home')" class="nav-link active" id="nav-home">
+          <span class="nav-link-text">Home</span>
+          <span class="nav-link-hover"></span>
+        </a>
+        <a href="#" onclick="showPage('stage1')" class="nav-link" id="nav-stage1">
+          <span class="nav-link-text">Stage 1</span>
+          <span class="nav-link-hover"></span>
+        </a>
+        <a href="#" onclick="showPage('stage2')" class="nav-link" id="nav-stage2">
+          <span class="nav-link-text">Stage 2</span>
+          <span class="nav-link-hover"></span>
+        </a>
+        <a href="#" onclick="showPage('practicals')" class="nav-link" id="nav-practicals">
+          <span class="nav-link-text">Practicals</span>
+          <span class="nav-link-hover"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Search & Filter Toolbar -->
+      <div class="toolbar" id="toolbar" style="display:none">
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search tasks, practicals, labs..." oninput="filterCards()" />
+          <div class="search-glow"></div>
+        </div>
+        <div class="filters">
+          <button class="filter-btn active" onclick="setFilter('all', this)">
+            <span>All</span>
+            <div class="filter-glow"></div>
+          </button>
+          <button class="filter-btn" onclick="setFilter('task', this)">
+            <span>Tasks</span>
+            <div class="filter-glow"></div>
+          </button>
+          <button class="filter-btn" onclick="setFilter('practical', this)">
+            <span>Practicals</span>
+            <div class="filter-glow"></div>
+          </button>
+          <button class="filter-btn" onclick="setFilter('theory', this)">
+            <span>Theory</span>
+            <div class="filter-glow"></div>
+          </button>
+          <button class="filter-btn" onclick="setFilter('lab', this)">
+            <span>Labs</span>
+            <div class="filter-glow"></div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pages -->
+      <div id="page-home"></div>
+      <div id="page-stage1" style="display:none"></div>
+      <div id="page-stage2" style="display:none"></div>
+      <div id="page-practicals" style="display:none"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2024 Vraj Lalwala · DevOps Build Track</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/vraj-lalwala-029bb4284/" target="_blank" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-secondary)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/VrajLalwala22" target="_blank" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-secondary)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          GitHub
+        </a>
+        <a href="mailto:vrajlalwalawork@gmail.com" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-secondary)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
