@@ -157,7 +157,7 @@ function buildHome() {
             </svg>
             <span>DevOps Engineer</span>
           </div>
-          <h1>Vraj Lalwala<br/>DevOps Portfolio</h1>
+          <h1>Vraj Lalwala<br/>Portfolio</h1>
           <p class="hero-subtitle">
             A comprehensive showcase of all tasks, practicals, labs, and theory documentation 
             from Stage 1 and Stage 2 of the DevOps Build Track internship program.
@@ -250,6 +250,45 @@ function buildHome() {
             </svg>
           </div>
         </div>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top: 4rem; text-align: center;">
+        <h2 style="font-size: 2rem;">Technical <span class="brand-accent">Edge</span></h2>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">A comprehensive overview of the tools, platforms, and languages I use to build scalable and reliable infrastructure.</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+        <div class="stage-card" style="cursor: default;">
+          <div class="stage-icon" style="background: rgba(0, 212, 255, 0.1); color: var(--primary);">🔥</div>
+          <h3>Proficient In</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">Technologies I am highly experienced with and use daily for production environments.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem;">
+            <span class="tool-tag">AWS (EC2, VPC, RDS, S3, IAM)</span>
+            <span class="tool-tag">Terraform</span>
+            <span class="tool-tag">Docker</span>
+            <span class="tool-tag">Linux</span>
+            <span class="tool-tag">Bash Scripting</span>
+            <span class="tool-tag">Prometheus</span>
+            <span class="tool-tag">Grafana</span>
+            <span class="tool-tag">Loki</span>
+          </div>
+        </div>
+
+        <div class="stage-card" style="cursor: default;">
+          <div class="stage-icon" style="background: rgba(147, 51, 234, 0.1); color: #c084fc;">💡</div>
+          <h3>Familiar With</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">Tools and languages I have practical experience with through projects and integration.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem;">
+            <span class="tool-tag">Jenkins</span>
+            <span class="tool-tag">GitHub Actions</span>
+            <span class="tool-tag">GitLab CI/CD</span>
+            <span class="tool-tag">Node.js</span>
+            <span class="tool-tag">React</span>
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">MySQL</span>
+            <span class="tool-tag">MongoDB</span>
+          </div>
         </div>
       </div>
 
