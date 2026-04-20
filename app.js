@@ -264,7 +264,7 @@ function buildHome() {
           <h3>Proficient In</h3>
           <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">Technologies I am highly experienced with and use daily for production environments.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem;">
-            <span class="tool-tag">AWS (EC2, VPC, RDS, S3, IAM)</span>
+            <span class="tool-tag">AWS</span>
             <span class="tool-tag">Terraform</span>
             <span class="tool-tag">Docker</span>
             <span class="tool-tag">Linux</span>
@@ -283,6 +283,7 @@ function buildHome() {
             <span class="tool-tag">Jenkins</span>
             <span class="tool-tag">GitHub Actions</span>
             <span class="tool-tag">GitLab CI/CD</span>
+            <span class="tool-tag">New Relic</span>
             <span class="tool-tag">Node.js</span>
             <span class="tool-tag">React</span>
             <span class="tool-tag">Python</span>
