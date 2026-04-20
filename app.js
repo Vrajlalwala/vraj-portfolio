@@ -253,6 +253,30 @@ function buildHome() {
         </div>
       </div>
 
+      <div class="section-header" style="margin-top: 4rem; text-align: center; background: rgba(0, 212, 255, 0.05); padding: 3rem; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.1);">
+        <h2 style="font-size: 2rem;">Professional <span class="brand-accent">Resume</span></h2>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 2rem;">Download my full resume for a detailed overview of my experience, certifications, and technical expertise.</p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="resume.pdf" target="_blank" class="filter-btn active" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span>View Resume</span>
+            <div class="filter-glow"></div>
+          </a>
+          <a href="resume.pdf" download="Vraj_Lalwala_Resume.pdf" class="filter-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download PDF</span>
+            <div class="filter-glow"></div>
+          </a>
+        </div>
+      </div>
+
       <div class="section-header" style="margin-top: 4rem; text-align: center;">
         <h2 style="font-size: 2rem;">Top <span class="brand-accent">GitHub Projects</span></h2>
         <p style="color: var(--text-secondary); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Explore some of my most impactful open-source contributions and personal repositories, dynamically fetched from GitHub based on community stars.</p>
