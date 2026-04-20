@@ -258,20 +258,20 @@ function buildHome() {
         <p style="color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 2rem;">Download my full resume for a detailed overview of my experience, certifications, and technical expertise.</p>
         <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
           <a href="resume.pdf" target="_blank" class="filter-btn active" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: relative; z-index: 2;">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
               <circle cx="12" cy="12" r="3"></circle>
             </svg>
-            <span>View Resume</span>
+            <span style="position: relative; z-index: 2;">View Resume</span>
             <div class="filter-glow"></div>
           </a>
           <a href="resume.pdf" download="Vraj_Lalwala_Resume.pdf" class="filter-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: relative; z-index: 2;">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            <span>Download PDF</span>
+            <span style="position: relative; z-index: 2;">Download PDF</span>
             <div class="filter-glow"></div>
           </a>
         </div>
